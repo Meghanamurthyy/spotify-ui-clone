@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background: #f4f4f4;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .sidebar .logo {
+    text-align: center;
+  }
+  
+  .sidebar .logo img {
+    width: 150px;
+  }
+  
+  .sidebar .navigation ul,
+  .sidebar .policies ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar .navigation li,
+  .sidebar .policies li {
+    margin: 15px 0;
+  }
+  
+  .sidebar .navigation a,
+  .sidebar .policies a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar .navigation .fa,
+  .sidebar .policies .fa {
+    margin-right: 10px;
+  }
+  
+  .main-container {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prev-next-buttons button {
+    background: none;
+    border: none;
+    color: #1d1d1d;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 16px;
+  }
+  
+  .navbar button {
+    padding: 10px 20px;
+    background-color: #1d1d1d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .item .play {
+    background-color: #1db954;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .item:hover .play {
+    opacity: 1;
+  }
+  
+  .item h4 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: #555;
+  }
+  .music-quotes-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .music-quotes-section h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+  }
+  
+  .quotes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .quote-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .quote-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .quote-text {
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .quote-card::before {
+    content: "🎵";
+    font-size: 40px;
+    color: #1db954;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
